@@ -1,6 +1,6 @@
 {
   "name": "@serdoo/vuetify-tiptap",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "license": "MIT",
   "description": "Awesome and extendable rich text editor component for Vuetify projects using tiptap",
   "homepage": "https://github.com/ahmetarifoz/vuetify-tiptap",
