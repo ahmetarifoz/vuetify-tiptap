@@ -199,6 +199,9 @@ export default Extension.create<StarterKitOptions>({
     }
 
     if (this.options.mention !== false) {
+      this.options.mention = {
+        char: "{{",
+      };
       extensions.push(Mention.configure(this.options.mention));
     }
 

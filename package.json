@@ -1,15 +1,15 @@
 {
-  "name": "@peepi/vuetify-tiptap",
+  "name": "@serdoo/vuetify-tiptap",
   "version": "1.3.3",
   "license": "MIT",
   "description": "Awesome and extendable rich text editor component for Vuetify projects using tiptap",
-  "homepage": "https://github.com/peepi-com-br/vuetify-tiptap",
+  "homepage": "https://github.com/ahmetarifoz/vuetify-tiptap",
   "repository": {
     "type": "git",
-    "url": "https://github.com/peepi-com-br/vuetify-tiptap.git"
+    "url": "https://github.com/ahmetarifoz/vuetify-tiptap.git"
   },
   "bugs": {
-    "url": "https://github.com/peepi-com-br/vuetify-tiptap/issues"
+    "url": "https://github.com/ahmetarifoz/vuetify-tiptap/issues"
   },
   "keywords": [
     "vue",

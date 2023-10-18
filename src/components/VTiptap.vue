@@ -409,7 +409,7 @@ export default class extends Vue {
                       .filter(item =>
                         item.text.toLowerCase().startsWith(query.toLowerCase())
                       )
-                      .slice(0, 5);
+                      .slice(0, 25);
                   },
                   render: renderSuggestion(this),
                 },
