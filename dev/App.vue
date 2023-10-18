@@ -231,7 +231,7 @@ export default {
           text: u.username,
           avatar: u.image,
         }))
-        .slice(0, 5);
+        .slice(0, 25);
     },
   },
 };

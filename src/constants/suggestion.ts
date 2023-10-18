@@ -36,7 +36,8 @@ export function renderSuggestion(component) {
         }
 
         if (event.key === "ArrowDown") {
-          mentionConfig.selected = (mentionConfig.selected + 1) % mentionConfig.items.length;
+          mentionConfig.selected =
+            (mentionConfig.selected + 1) % mentionConfig.items.length;
 
           return true;
         }
