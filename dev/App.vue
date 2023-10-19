@@ -220,18 +220,9 @@ export default {
 
   methods: {
     mentionItems: async function (query) {
-      const response = await fetch(
-        `https://dummyjson.com/users/search?q=${query}`,
-        {}
-      ).then(res => res.json());
 
-      return response.users
-        .map(u => ({
-          value: u.id,
-          text: u.username,
-          avatar: u.image,
-        }))
-        .slice(0, 25);
+
+      return [{text:'Event Message Id', value:'{{=event.message}}'},{text:'Session Id', value:'{{=session.id}}'}]
     },
   },
 };

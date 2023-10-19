@@ -386,7 +386,7 @@ export default class extends Vue {
            
               suggestion: {
                 char: '{',
-                allowedPrefixes: [''],
+                allowedPrefixes: [' '],
 
                 startOfLine: false,
                   items: async ({ query }) => {
@@ -650,7 +650,10 @@ export default class extends Vue {
 
   selectMention(index) {
     const item = this.mentionConfig.items[index];
-    this.mentionConfig.command({ id: item.value, label: '{='+item.text+'}}' });
+
+    const inputString = item.value;
+const modifiedString = inputString.replace('{', '');
+    this.mentionConfig.command({ id: modifiedString, label: modifiedString });
     this.mentionConfig.show = false;
 
     this.$emit("mention", item);
