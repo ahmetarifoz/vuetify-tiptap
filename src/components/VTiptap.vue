@@ -385,14 +385,10 @@ export default class extends Vue {
 
            
               suggestion: {
-                char: '{{=',
-                allowedPrefixes: [' '],
+                char: '{',
+                allowedPrefixes: [''],
 
                 startOfLine: false,
-                // command: () => {
-                //   console.log('selected');
-                // },
-          
                   items: async ({ query }) => {
                     this.mentionConfig.query = query;
 
@@ -654,7 +650,7 @@ export default class extends Vue {
 
   selectMention(index) {
     const item = this.mentionConfig.items[index];
-    this.mentionConfig.command({ id: item.value, label: item.text+'}}' });
+    this.mentionConfig.command({ id: item.value, label: '{='+item.text+'}}' });
     this.mentionConfig.show = false;
 
     this.$emit("mention", item);
